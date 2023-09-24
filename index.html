@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors specificity</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        /*
+            1. tag selectors
+            2. class, pseudo-class, attribute selectors
+            3. id selectors
+            4. inline selectors
+        */
+        p {color:red;}
+
+        .txt {color: green;}
+        p:hover {color: blue;}
+        p[message] {color:silver;}
+
+        #warning {color: yellow;}
+    </style>
+</head>
+<body>
+    <p style="color:orange;" class="txt" message id="warning">Lorem ipsum dolor sit amet.</p>
+</body>
+</html>
